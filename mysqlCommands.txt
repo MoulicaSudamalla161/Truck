@@ -1,0 +1,33 @@
+mysqld --initialize
+mysqld --initialize-secure
+mysqld --console
+
+
+mysql -u root -p
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from Suman Dutta to All Participants:
+https://docs.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=javase&pivots=platform-windows
+from Suman Dutta to All Participants:
+https://docs.microsoft.com/en-us/azure/developer/java/toolkit-for-eclipse/create-hello-world-web-app
+
+
+Azure Cloud Shell is a browser-based command-line experience for managing and developing Azure resources. 
+from Suman Dutta to All Participants:
+az webapp stop \
+    --resource-group learn-49a40b2c-f50d-4b95-a303-96b6cd97d5ed \
+    --name <web app name>

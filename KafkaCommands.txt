@@ -1,0 +1,29 @@
+.............kafka..........
+
+
+
+https://www.youtube.com/watch?v=EUzH9khPYgs
+
+Change zookeeper.properties path ---  (log)
+
+change server.properties path----
+
+C:\Development_Avecto\kafka>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+
+
+C:\Development_Avecto\kafka>.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+
+Create topic
+
+C:\Development_Avecto\kafka>.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic SpringTestTopic
+
+List Topics 
+C:\Development_Avecto\kafka>.\bin\windows\kafka-topics.bat --list --zookeeper localhost:2181
+
+Producer
+C:\Development_Avecto\kafka>.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic SpringTestTopic
+
+Consumer
+C:\Development_Avecto\kafka>.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic SpringTestTopic --from-beginning
